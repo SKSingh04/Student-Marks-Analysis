@@ -1,0 +1,21 @@
+name = input("Enter your name: ")
+
+Maths = float(input("Enter Maths marks: "))
+DBMS = float(input("Enter DBMS marks: "))
+English = float(input("Enter English marks: "))
+
+totalMarks = Maths + DBMS + English
+averageMarks  = totalMarks/3
+
+highestMarks = max(Maths, DBMS, English)
+lowestMarks = min(Maths, DBMS, English)
+
+print("\nStudent Name:", name)
+print("Total Marks:", totalMarks)
+print("Highest Marks:", highestMarks)
+print("Lowest Marks:", lowestMarks)
+print("Average Marks:", averageMarks)
+
+print(f"\nMaths marks are greater than DBMS marks: {Maths>DBMS}")
+print(f"Maths marks are equal to English marks: {Maths==DBMS}")
+print(f"{name} has scored above or equal to 40 in all subjects: {(Maths>=40 and DBMS>=40 and English>=40)}")
